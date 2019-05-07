@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "bin": {
+    "mailer": "./index.js"
+  },
   "scripts": {
     "start": "node index.js"
   },
@@ -12,7 +15,7 @@
     "fs-extra": "^7.0.1",
     "imap": "^0.8.19",
     "mailparser": "^2.7.0",
-    "object.fromentries": "^2.0.0",
-    "shelljs": "^0.8.3"
+    "shelljs": "^0.8.3",
+    "yargs": "^13.2.2"
   }
 }

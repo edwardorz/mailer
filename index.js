@@ -17,7 +17,7 @@ const openInBox = cb => {
 
 imap.once('ready', () => {
   openInBox(() => {
-    const today = format('yyyy-MM-dd', argv.date || new Date()) // 命令行参数或者当前日期
+    const today = argv.date || format('yyyy-MM-dd', new Date()) // 命令行参数或者当前日期
     const tomorrow = format('yyyy-MM-dd', new Date(new Date(today) * 1 + 1000 * 60 * 60 * 24))
     console.log(`\n# ${argv.date || today}\n`.green.bold)
 
